@@ -1,4 +1,4 @@
-# Frontend Mentor Projects
+# Frontend Mentor Projects -- Advice Generator API
 
 This is a solution to the Advice generator app challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
