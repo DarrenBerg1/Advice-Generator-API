@@ -1,0 +1,93 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@800&family=Manrope&display=swap');
+
+/* Color Variables */
+:root {
+  --Light-Cyan: hsl(193, 38%, 86%);         
+  --Neon-Green: hsl(150, 100%, 66%);        
+  --Grayish-Blue: hsl(217, 19%, 38%);       
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);  
+  --Dark-Blue: hsl(218, 23%, 16%);          
+}
+
+/* Global Styles */
+* {
+  font-family: "Manrope", "sans-serif";     /* Setting font family */
+  box-sizing: border-box;                   /* Including padding and border in element's total width and height */
+  padding: 0%;                              /* Resetting default padding */
+  margin: 0%;                               /* Resetting default margin */
+}
+
+/* Body Styles */
+body {
+  min-height: 100vh;                        /* Minimum height of the body to cover the full viewport */
+  display: flex;                            
+  align-items: center;                      /* Centering flex items vertically */
+  justify-content: center;                  /* Centering flex items horizontally */
+  background-color: var(--Dark-Blue);      
+}
+
+/* Advice Card Styles */
+.advice-card {
+  width: 500px;                             
+  background-color: var(--Dark-Grayish-Blue); 
+  border-radius: 1rem;                      
+  position: relative;                       /* Positioning the card relative to its normal position */
+}
+
+/* Card Container Styles */
+.card-container {
+  padding: 2rem 3rem;                       /* Setting padding inside the card container */
+  text-align: center;                       
+  display: flex;                            
+  flex-direction: column;                   
+  align-items: center;                      
+  justify-content: space-between;           /* Distributing space evenly between flex items */
+  gap: 2rem;                                /* Specifying the gap between flex items */
+}
+
+/* Paragraph Styles */
+p {
+  color: var(--Neon-Green);                 
+  text-transform: uppercase;                 /* Converting text to uppercase */
+  letter-spacing: 4px;                       /* Adding letter spacing */
+  font-size: 12px;                           
+}
+
+/* Heading Styles */
+h2 {
+  color: var(--Light-Cyan);                 
+  font-size: 28px;                           
+}
+
+/* Image Styles */
+picture img {
+  margin-bottom: 1rem;                      
+}
+
+/* Button Styles */
+button {
+  position: absolute;                         /* Positioning the button absolutely */
+  bottom: -30px;                              /* Pushing the button below the card */
+  background-color: var(--Neon-Green);       
+  border: none;                               
+  padding: 1rem;                             
+  border-radius: 50%;                       
+  cursor: pointer;                            /* Changing cursor to pointer on hover */
+  display: flex;                              
+  align-items: center;                       
+  justify-content: center;                    
+}
+
+/* Button Hover Styles */
+button:hover {
+  filter: drop-shadow(0 0 0.75rem hsl(150, 100%,66%)); /* Adding drop shadow effect on hover */
+  transition: all 0.2s ease-out;                       /* Adding smooth transition effect */
+}
+
+/* Media Query for Small Screens */
+@media screen and (max-width: 500px) {
+  .advice-card {
+    width: 350px;                                     /* Adjusting card width for small screens */
+  }
+}
